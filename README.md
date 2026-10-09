@@ -20,8 +20,17 @@ Software Engineering student at RTU MIREA, Moscow. Writing code since 2020.
 ![MetalLB](https://img.shields.io/badge/MetalLB-326CE5?style=for-the-badge)
 ![Flannel](https://img.shields.io/badge/Flannel-326CE5?style=for-the-badge)
 ![Nginx](https://img.shields.io/badge/Nginx-326CE5?style=for-the-badge&logo=nginx&logoColor=white)
+![Proxmox](https://img.shields.io/badge/Proxmox-326CE5?style=for-the-badge&logo=proxmox&logoColor=white)
+![Packer](https://img.shields.io/badge/Packer-326CE5?style=for-the-badge&logo=packer&logoColor=white)
+![Ansible](https://img.shields.io/badge/Ansible-326CE5?style=for-the-badge&logo=ansible&logoColor=white)
+![Talos Linux](https://img.shields.io/badge/Talos%20Linux-326CE5?style=for-the-badge&logo=talos&logoColor=white)
+![cloud-init](https://img.shields.io/badge/cloud--init-326CE5?style=for-the-badge&logo=ubuntu&logoColor=white)
+![WireGuard](https://img.shields.io/badge/WireGuard-326CE5?style=for-the-badge&logo=wireguard&logoColor=white)
+![Hyper-V](https://img.shields.io/badge/Hyper--V-326CE5?style=for-the-badge)
 
 Hand-provisioned with kubeadm: a 5-node cluster with a 3-master HA control plane.
+Golden VM images for Proxmox built with Packer: Ubuntu autoinstall, Kubernetes
+node images, Talos Image Factory schematics. Every template is tested by booting a clone.
 
 ### Delivery
 
@@ -30,9 +39,27 @@ Hand-provisioned with kubeadm: a 5-node cluster with a 3-master HA control plane
 ![Git](https://img.shields.io/badge/Git-B45309?style=for-the-badge&logo=git&logoColor=white)
 ![Nexus](https://img.shields.io/badge/Nexus-B45309?style=for-the-badge&logo=sonatype&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-B45309?style=for-the-badge&logo=gnubash&logoColor=white)
+![Renovate](https://img.shields.io/badge/Renovate-B45309?style=for-the-badge&logo=renovate&logoColor=white)
+![pre-commit](https://img.shields.io/badge/pre--commit-B45309?style=for-the-badge&logo=precommit&logoColor=white)
 
 From commit to cluster in one pipeline: tests, image builds with Docker Buildx,
 publishing to a self-hosted registry, rollout to Kubernetes.
+
+### Security & supply chain
+
+![OpenSCAP](https://img.shields.io/badge/OpenSCAP-9F1239?style=for-the-badge)
+![Trivy](https://img.shields.io/badge/Trivy-9F1239?style=for-the-badge&logo=trivy&logoColor=white)
+![goss](https://img.shields.io/badge/goss-9F1239?style=for-the-badge)
+![gitleaks](https://img.shields.io/badge/gitleaks-9F1239?style=for-the-badge)
+![ShellCheck](https://img.shields.io/badge/ShellCheck-9F1239?style=for-the-badge)
+![zizmor](https://img.shields.io/badge/zizmor-9F1239?style=for-the-badge)
+![OpenSSF Scorecard](https://img.shields.io/badge/OpenSSF%20Scorecard-9F1239?style=for-the-badge&logo=openssf&logoColor=white)
+
+Images scanned against the CIS Level 1 benchmark with OpenSCAP and for CVEs with Trivy,
+verified with goss. Hardened CI: actions pinned by SHA, minimal permissions, secrets
+scoped to protected environments; the cloud runner reaches the lab only through
+a per-job WireGuard peer, nothing is exposed to the internet. OpenSSF Best Practices
+passing badge and Scorecard.
 
 ### Data & observability
 
