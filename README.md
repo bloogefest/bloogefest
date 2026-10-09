@@ -29,6 +29,7 @@ Software Engineering student at RTU MIREA, Moscow. Writing code since 2020.
 ![Hyper-V](https://img.shields.io/badge/Hyper--V-326CE5?style=for-the-badge)
 
 Hand-provisioned with kubeadm: a 5-node cluster with a 3-master HA control plane.
+
 Golden VM images for Proxmox built with Packer: Ubuntu autoinstall, Kubernetes
 node images, Talos Image Factory schematics. Every template is tested by booting a clone.
 
@@ -53,7 +54,7 @@ publishing to a self-hosted registry, rollout to Kubernetes.
 ![gitleaks](https://img.shields.io/badge/gitleaks-9F1239?style=for-the-badge)
 ![ShellCheck](https://img.shields.io/badge/ShellCheck-9F1239?style=for-the-badge)
 ![zizmor](https://img.shields.io/badge/zizmor-9F1239?style=for-the-badge)
-![OpenSSF Scorecard](https://img.shields.io/badge/OpenSSF%20Scorecard-9F1239?style=for-the-badge&logo=openssf&logoColor=white)
+![OpenSSF Scorecard](https://img.shields.io/badge/OpenSSF%20Scorecard-9F1239?style=for-the-badge)
 
 Images scanned against the CIS Level 1 benchmark with OpenSCAP and for CVEs with Trivy,
 verified with goss. Hardened CI: actions pinned by SHA, minimal permissions, secrets
